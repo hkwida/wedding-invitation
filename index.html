@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>The Wedding of Rangga & Kirana</title>
+<meta name="description" content="Undangan pernikahan Rangga & Kirana. Dengan penuh syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu.">
+
+<!-- ======================================================
+     SOCIAL SHARING (OG) — ganti isi content sesuai kebutuhan
+     ====================================================== -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Wedding of Rangga & Kirana">
+<meta property="og:description" content="Dengan penuh syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/icons/favicon.png">
+
+<!-- Google Fonts: Cormorant Garamond (display) + Montserrat (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     COVER / HALAMAN PEMBUKA
+     Tampil pertama kali. Hilang setelah tombol "Buka Undangan"
+     ========================================================= -->
+<section id="cover" class="cover">
+  <div class="cover__ornament cover__ornament--top" aria-hidden="true"></div>
+  <div class="cover__frame">
+    <p class="cover__eyebrow">Undangan Pernikahan</p>
+
+    <div class="cover__names">
+      <h1 class="cover__name">Rangga</h1>
+      <span class="cover__amp">&amp;</span>
+      <h1 class="cover__name">Kirana</h1>
+    </div>
+
+    <p class="cover__date">14 Februari 2027</p>
+
+    <div class="cover__guest">
+      <p>Kepada Yth.<br>Bapak/Ibu/Saudara/i</p>
+      <p class="cover__guest-name" id="guestName"></p>
+    </div>
+
+    <button type="button" id="openInvitation" class="btn btn--primary cover__cta">
+      Buka Undangan
+    </button>
+  </div>
+  <div class="cover__ornament cover__ornament--bottom" aria-hidden="true"></div>
+</section>
+
+<!-- =========================================================
+     ISI UNDANGAN (tersembunyi sampai cover dibuka)
+     ========================================================= -->
+<div id="mainContent" class="main-content" aria-hidden="true">
+
+  <!-- NAVIGASI -->
+  <nav class="nav" id="siteNav" aria-label="Navigasi utama">
+    <ul class="nav__list">
+      <li><a href="#hero" class="nav__link" data-nav>Home</a></li>
+      <li><a href="#profil" class="nav__link" data-nav>Mempelai</a></li>
+      <li><a href="#acara" class="nav__link" data-nav>Acara</a></li>
+      <li><a href="#rsvp" class="nav__link" data-nav>RSVP</a></li>
+      <li><a href="#ucapan" class="nav__link" data-nav>Ucapan</a></li>
+    </ul>
+  </nav>
+
+  <!-- tombol menu mobile -->
+  <button type="button" id="navToggle" class="nav-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__list">
+      <li><a href="#hero" data-nav>Home</a></li>
+      <li><a href="#profil" data-nav>Mempelai</a></li>
+      <li><a href="#acara" data-nav>Acara</a></li>
+      <li><a href="#countdown" data-nav>Countdown</a></li>
+      <li><a href="#rsvp" data-nav>RSVP</a></li>
+      <li><a href="#ucapan" data-nav>Ucapan</a></li>
+      <li><a href="#hadiah" data-nav>Tanda Kasih</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO / FOTO PEMBUKA ISI -->
+  <section id="hero" class="hero reveal">
+    <div class="hero__photo">
+      <img src="assets/images/couple.jpg" alt="Foto Rangga dan Kirana" width="1600" height="1200" loading="eager">
+    </div>
+    <div class="hero__caption">
+      <p class="hero__quote">&ldquo;Dua hati, satu langkah menuju rumah yang sama.&rdquo;</p>
+    </div>
+  </section>
+
+  <!-- KUTIPAN AL-QURAN -->
+  <section id="quote" class="quote reveal">
+    <div class="quote__frame">
+      <p class="quote__arabic" lang="ar" dir="rtl">
+        وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً
+      </p>
+      <p class="quote__text">
+        &ldquo;Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.&rdquo;
+      </p>
+      <p class="quote__source">QS. Ar-Rum : 21</p>
+    </div>
+  </section>
+
+  <!-- PROFIL MEMPELAI -->
+  <section id="profil" class="profil reveal">
+    <p class="section-label">Mempelai</p>
+    <h2 class="section-title">The Bride &amp; The Groom</h2>
+
+    <div class="profil__grid">
+      <article class="profil__card">
+        <div class="profil__photo">
+          <img src="assets/images/groom.jpg" alt="Foto Rangga Ardiansyah" width="1000" height="1200" loading="lazy">
+        </div>
+        <h3 class="profil__name">Rangga Ardiansyah</h3>
+        <p class="profil__desc">
+          Putra dari<br>
+          Bapak Hendra Wijaya &amp; Ibu Susilawati
+        </p>
+        <p class="profil__order">Putra pertama dari 2 bersaudara</p>
+      </article>
+
+      <div class="profil__divider" aria-hidden="true">&amp;</div>
+
+      <article class="profil__card">
+        <div class="profil__photo">
+          <img src="assets/images/bride.jpg" alt="Foto Kirana Maheswari" width="1000" height="1200" loading="lazy">
+        </div>
+        <h3 class="profil__name">Kirana Maheswari</h3>
+        <p class="profil__desc">
+          Putri dari<br>
+          Bapak Bambang Sutrisno &amp; Ibu Ratna Dewi
+        </p>
+        <p class="profil__order">Putri kedua dari 3 bersaudara</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- DETAIL ACARA -->
+  <section id="acara" class="acara reveal">
+    <p class="section-label">Save the Date</p>
+    <h2 class="section-title">Detail Acara</h2>
+
+    <div class="acara__grid">
+      <article class="acara__card">
+        <h3 class="acara__title">Akad Nikah</h3>
+        <p class="acara__day" data-event="ceremony-day">Minggu</p>
+        <p class="acara__date" data-event="ceremony-date">14 Februari 2027</p>
+        <p class="acara__time" data-event="ceremony-time">08.00 &ndash; 10.00 WIB</p>
+        <div class="acara__place">
+          <p class="acara__venue" data-event="ceremony-venue">Kediaman Mempelai Wanita</p>
+          <p class="acara__address" data-event="ceremony-address">Jl. Melati No. 21, Depok, Jawa Barat</p>
+        </div>
+        <a href="#" class="btn btn--outline acara__maps" data-maps="ceremony" target="_blank" rel="noopener">Lihat Lokasi</a>
+      </article>
+
+      <article class="acara__card">
+        <h3 class="acara__title">Resepsi Pernikahan</h3>
+        <p class="acara__day" data-event="reception-day">Minggu</p>
+        <p class="acara__date" data-event="reception-date">14 Februari 2027</p>
+        <p class="acara__time" data-event="reception-time">11.00 &ndash; 14.00 WIB</p>
+        <div class="acara__place">
+          <p class="acara__venue" data-event="reception-venue">Grand Ballroom Hotel Aryaduta</p>
+          <p class="acara__address" data-event="reception-address">Jl. Margonda Raya No. 88, Depok, Jawa Barat</p>
+        </div>
+        <a href="#" class="btn btn--outline acara__maps" data-maps="reception" target="_blank" rel="noopener">Lihat Lokasi</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown" class="countdown reveal">
+    <p class="section-label">Menghitung Hari</p>
+    <h2 class="section-title">Wedding Day</h2>
+
+    <div class="countdown__grid" id="countdownGrid">
+      <div class="countdown__box">
+        <span class="countdown__number" id="cd-days">00</span>
+        <span class="countdown__unit">Hari</span>
+      </div>
+      <div class="countdown__box">
+        <span class="countdown__number" id="cd-hours">00</span>
+        <span class="countdown__unit">Jam</span>
+      </div>
+      <div class="countdown__box">
+        <span class="countdown__number" id="cd-minutes">00</span>
+        <span class="countdown__unit">Menit</span>
+      </div>
+      <div class="countdown__box">
+        <span class="countdown__number" id="cd-seconds">00</span>
+        <span class="countdown__unit">Detik</span>
+      </div>
+    </div>
+    <p class="countdown__arrived" id="countdownArrived" hidden>Hari yang dinantikan telah tiba</p>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="rsvp reveal">
+    <p class="section-label">RSVP</p>
+    <h2 class="section-title">Konfirmasi Kehadiran</h2>
+    <p class="rsvp__intro">Mohon konfirmasi kehadiran Bapak/Ibu/Saudara/i sebelum hari pernikahan kami.</p>
+
+    <form id="rsvpForm" class="form" novalidate>
+      <div class="form__group">
+        <label for="rsvpName">Nama Lengkap</label>
+        <input type="text" id="rsvpName" name="name" required autocomplete="name" placeholder="Tulis nama lengkap Anda">
+        <span class="form__error" id="rsvpNameError" role="alert"></span>
+      </div>
+
+      <fieldset class="form__group">
+        <legend>Status Kehadiran</legend>
+        <div class="form__radio-group">
+          <label class="form__radio">
+            <input type="radio" name="attendance" value="Hadir" required>
+            <span>Saya akan hadir</span>
+          </label>
+          <label class="form__radio">
+            <input type="radio" name="attendance" value="Tidak Hadir" required>
+            <span>Saya tidak dapat hadir</span>
+          </label>
+        </div>
+        <span class="form__error" id="rsvpAttendanceError" role="alert"></span>
+      </fieldset>
+
+      <div class="form__group">
+        <label for="rsvpGuests">Jumlah Tamu</label>
+        <select id="rsvpGuests" name="guests" required>
+          <option value="" disabled selected>Pilih jumlah tamu</option>
+          <option value="1">1 orang</option>
+          <option value="2">2 orang</option>
+          <option value="3">3 orang</option>
+          <option value="4">4 orang</option>
+        </select>
+        <span class="form__error" id="rsvpGuestsError" role="alert"></span>
+      </div>
+
+      <button type="submit" class="btn btn--primary form__submit" id="rsvpSubmit">
+        <span class="btn__label">Kirim Konfirmasi</span>
+      </button>
+
+      <p class="form__status" id="rsvpStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- BUKU TAMU / UCAPAN -->
+  <section id="ucapan" class="ucapan reveal">
+    <p class="section-label">Buku Tamu</p>
+    <h2 class="section-title">Ucapan &amp; Doa</h2>
+
+    <form id="wishForm" class="form" novalidate>
+      <div class="form__group">
+        <label for="wishName">Nama</label>
+        <input type="text" id="wishName" name="name" required autocomplete="name" placeholder="Tulis nama Anda">
+        <span class="form__error" id="wishNameError" role="alert"></span>
+      </div>
+
+      <div class="form__group">
+        <label for="wishMessage">Ucapan / Doa</label>
+        <textarea id="wishMessage" name="message" rows="4" required placeholder="Tulis ucapan dan doa untuk kedua mempelai"></textarea>
+        <span class="form__error" id="wishMessageError" role="alert"></span>
+      </div>
+
+      <button type="submit" class="btn btn--primary form__submit" id="wishSubmit">
+        <span class="btn__label">Kirim Ucapan</span>
+      </button>
+
+      <p class="form__status" id="wishStatus" role="status" aria-live="polite"></p>
+    </form>
+
+    <!-- Ucapan contoh / statis. Lihat README untuk cara menampilkan ucapan nyata dengan aman. -->
+    <div class="wishes-list" id="wishesList">
+      <article class="wish-card">
+        <p class="wish-card__name">Dimas &amp; Ayu</p>
+        <p class="wish-card__text">Selamat menempuh hidup baru. Semoga menjadi keluarga yang sakinah, mawaddah, warahmah.</p>
+      </article>
+      <article class="wish-card">
+        <p class="wish-card__name">Bapak Sutedjo</p>
+        <p class="wish-card__text">Barakallahu laka wa baraka alaika. Semoga selalu dilimpahi kebahagiaan dan keberkahan.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- HADIAH -->
+  <section id="hadiah" class="hadiah reveal">
+    <p class="section-label">Tanda Kasih</p>
+    <h2 class="section-title">Kado Pernikahan</h2>
+    <p class="hadiah__text">
+      Mohon maaf, kami tidak mencantumkan nomor rekening dalam undangan ini. Apabila Bapak/Ibu/Saudara/i berkenan
+      memberikan tanda kasih berupa hadiah pernikahan, kami dengan senang hati menerimanya. Untuk informasi lebih
+      lanjut, Bapak/Ibu/Saudara/i dapat menghubungi salah satu mempelai secara langsung.
+    </p>
+  </section>
+
+  <!-- CLOSING -->
+  <section id="closing" class="closing reveal">
+    <div class="closing__photo">
+      <img src="assets/images/couple.jpg" alt="Foto Rangga dan Kirana" width="1600" height="1200" loading="lazy">
+    </div>
+    <div class="closing__content">
+      <p class="section-label">Terima Kasih</p>
+      <p class="closing__text">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan
+        memberikan doa restu untuk pernikahan kami.
+      </p>
+      <div class="closing__names">
+        <h2>Rangga</h2>
+        <span>&amp;</span>
+        <h2>Kirana</h2>
+      </div>
+      <p class="closing__signoff">With love</p>
+
+      <button type="button" id="shareButton" class="btn btn--outline closing__share">
+        Bagikan Undangan
+      </button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2027 Rangga &amp; Kirana</p>
+  </footer>
+
+</div><!-- /mainContent -->
+
+<!-- TOMBOL MUSIK MELAYANG -->
+<button type="button" id="musicToggle" class="music-toggle" aria-label="Aktifkan musik" aria-pressed="false">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+    <path d="M9 18V5l12-2v13"></path>
+    <circle cx="6" cy="18" r="3"></circle>
+    <circle cx="18" cy="16" r="3"></circle>
+  </svg>
+</button>
+<audio id="bgMusic" src="assets/music/wedding-music.mp3" loop preload="none"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
